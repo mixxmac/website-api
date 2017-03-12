@@ -40,7 +40,7 @@ module.exports.registerRequest = function(event, context, callback){
         const response = {
             statusCode: responseCode,
             headers: {
-                "Access-Control-Allow-Origin" : process.env.allowedOrigin,
+                "Access-Control-Allow-Origin" : process.env.ALLOWED_ORIGIN,
                 "Access-Control-Allow-Credentials" : true
             },
             body: JSON.stringify({ "message": message })
