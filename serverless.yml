@@ -1,0 +1,33 @@
+service: agilevision-website-api
+provider:
+  name: aws
+  runtime: nodejs4.3
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "ses:*"
+      Resource: "*"
+
+
+functions:
+  register_request:
+    handler: handler.registerRequest
+    timeout: 30
+    memory: 128
+    events:
+      - http:
+          path: requests/register
+          method: post
+          cors:
+            origins:
+              - '*.agilevision.io'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+            allowCredentials: false
+    environment:
+      NOTIFICATION_EMAIL: contact@agilevision.io
+      ALLOWED_ORIGIN: "*.agilevision.io"

@@ -1,0 +1,20 @@
+{
+  "name": "agilevision-website-api",
+  "version": "1.0.0",
+  "description": "AgileVision.io API",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "author": "AgileVision sp. z o.o.",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.5",
+    "aws-sdk": "^2.18.0",
+    "serverless": "^1.7.0"
+  }
+}
