@@ -20,6 +20,12 @@ npm install -g serverless
 # Configuration
 
 Change values in the *serverless.yml* according to your needs.
+Install required dependencies using commands below:
+
+```bash
+cd <project-directory>
+npm install
+```
 
 # Deployment
 Deploy with the following command:
