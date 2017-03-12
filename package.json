@@ -1,17 +1,17 @@
 {
   "name": "agilevision-website-api",
   "version": "1.0.0",
-  "description": "AgileVision.io API",
+  "description": "AgileVision.io Website API",
   "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "."
+    "url": "git@github.com:AgileVisionCompany/website-api.git"
   },
-  "author": "AgileVision sp. z o.o.",
-  "license": "ISC",
+  "author": "AgileVision sp. z o.o.(contact@agilevision.io)",
+  "license": "MIT",
   "dependencies": {
     "async": "^2.1.5",
     "aws-sdk": "^2.18.0",
