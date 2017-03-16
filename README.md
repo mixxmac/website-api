@@ -16,6 +16,11 @@ Install the serverless.io for all users:
 ```bash
 npm install -g serverless
 ```
+Clone repo:
+
+```bash
+git clone <this-repo>
+```
 
 # Configuration
 
