@@ -7,6 +7,7 @@ module.exports.registerRequest = function(event, context, callback){
   async.waterfall([
     (next) => {
       console.log(event);
+      console.log(JSON.stringify(`Event: event`));
         const data = JSON.parse(event.body);
 
         ses.sendEmail({
